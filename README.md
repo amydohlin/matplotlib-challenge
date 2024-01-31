@@ -21,16 +21,16 @@ Overview: Analyze the provided data and create visuals for a high level summary 
         Ref: study group with Melissa Krachmer, Christine Jaregui, Tianyue Li, Gabby Olker
     - In order to clean up the dataframe, I used the .drop_duplicates() function on the original merged dataframe (dropping the duplicates
         found in Mouse ID and Timepoint), and renamed the dataframe as clean_mouse. Five rows of duplicate data were removed.
-    - The last task was to recount the number of mice in the clean_mouse dataframe. I accomplished this by using the .nunique() function
+    - The last task was to reScount the number of mice in the clean_mouse dataframe. I accomplished this by using the .nunique() function
         again to count each unique Mouse ID, and found that the number of Mouse IDs stayed the same.
  
 -
 ------------------------------------------------------------------------------------
 2. Generating Summary Statistics
     -Create data frame of summary statistics
+        - First I 
     -Include a row for each drug regimen (names should be the index column)
-        https://stackoverflow.com/questions/40755680/how-to-reset-index-pandas-dataframe-after-dropna-pandas-dataframe
-        did .dropna(ignore_index=True) but numbered index is still htere
+        - I reset the index by using the .set_index() function with Drug Regimen as the index, inplace = True.
     
     -Columns for Mean, Median, Variance, Standard Deviation, SEM of Tumor Value
     
